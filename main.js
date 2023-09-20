@@ -4,7 +4,7 @@
 
 const menuBtn = document.querySelector("#menu-btn");
 const closeBtn = document.querySelector("#close-btn");
-const menu = document.querySelector(".nav__items");
+const menu = document.querySelector(".nav_items");
 
 // open nav menu
 menuBtn.addEventListener("click", () => {
@@ -37,7 +37,7 @@ faqs.forEach(faq => {
     faq.addEventListener('click', () => {
         faq.classList.toggle('open');
         // change icon
-        const icon = faq.querySelector('.faq__icon i');
+        const icon = faq.querySelector('.faq_icon i');
         if(icon.className === 'uil uil-plus') {
             icon.className = 'uil uil-minus';
         } else {
@@ -57,7 +57,7 @@ window.addEventListener('scroll', () => {
 
 // ADDED AFTER TUTORIAL
 // close nav menu when any nav Items is clicked on tablets and mobile
-const navItems = document.querySelectorAll('.nav__items li a');
+const navItems = document.querySelectorAll('.nav_items li a');
 if(window.innerWidth < 1024) {
     navItems.forEach(item => {
         item.addEventListener('click', () => {
