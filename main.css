@@ -307,3 +307,17 @@ header p{
 .faq.open .faq_answer{
     display: block;
 }
+.downloadApp_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+.downloadApp_content{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.cta{
+    justify-content: start;
+    margin-top: 2rem;
+}
