@@ -411,3 +411,142 @@ footer ul li:hover{
     color: var(--color-white);
     border-top: 1px solid var(--color-light);
 }
+
+@media screen and (max-width: 1024px) {
+    .container{
+        width: var(--container-width-tablet);
+    }   
+    h1{
+        font-size: 4.2rem;
+    }
+    h2{
+        font-size: 2rem;
+    }
+    h3{
+        font-size: 1.9rem;
+    }
+    .lead{
+        width: 72%;
+        margin-bottom: 3rem;
+    }
+    section{
+        padding: var(--bottom-section-padding-mobile);
+    }
+    nav{
+        background: var(--color-primary);
+    }
+    .nav_container{
+        position: relative;
+        width: 100vw;
+    }
+    .nav_logo{
+        margin-left: 2rem;
+        position: relative;
+    }
+    .nav_items{
+        position: fixed;
+        top: 6rem;
+        right: 0;
+        background: var(--color-white);
+        height: max-content;
+        width: 18rem;
+        box-shadow: -2rem 2rem 3rem rgba(0, 0, 240, 0.2);
+        flex-direction: column;
+        gap: 0;
+        z-index: 3;
+        display: none;
+    }
+    .nav_items li{
+        width: 100%;
+        height: 6rem;
+    }
+    .nav_items li a{
+        color: var(--color-black);
+        width: 100%;
+        height: 100%;
+        display: block;
+        padding-left: 3rem;
+        display: flex;
+        align-items: center;
+        transition: all 400ms ease;
+    }
+    .nav_items li a:hover{
+        background: var(--color-primary);
+        color: var(--color-white);
+    }
+    .nav_logo{
+        position: relative;
+        left: 0;
+        transform: translate(0);
+    }
+    nav button{
+        display: inline-block;
+        margin-right: 1.4rem;
+        background: transparent;
+        color: var(--color-white);
+        cursor: pointer;
+    }
+    nav button#close-btn{
+        display: none;
+    }
+    nav button i{
+        font-size: 2.4rem;
+    }
+
+    header {
+        padding-bottom: var(--bottom-section-padding-mobile);
+        background: var(--color-primary);
+    }
+    .header_title{
+        margin-bottom: 1.5rem;
+    }
+    .header_image{
+        display: none;
+    }
+    .cta{
+        margin-top: 3rem;
+    }
+    .header_socials{
+        top: 24%;
+        gap: 1rem;
+        font-size: 1rem;
+    }
+    .header_decorator-2{
+        display: none;
+    }
+
+    #about{
+        margin-top: 7rem;
+    }
+    .about_article{
+        margin: 0 auto;
+    }
+    .clients_container{
+        gap: 1rem;
+    }
+    .testimonials_container{
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    #downloadApp{
+        text-align: center;
+    }
+    #downloadApp .cta{
+        flex-direction: column;
+        gap: 1rem;
+        margin: 0 auto;
+    }
+    .subscribe_container{
+        flex-direction: column;
+        height: auto;
+        gap: 5rem;
+        padding: 3rem;
+        font-size: 1.2rem;
+    }
+    .subscribe_container p{
+        width: 94%;
+    }
+    .footer_container{
+        grid-template-columns: 1fr 1fr;
+    }
+}
